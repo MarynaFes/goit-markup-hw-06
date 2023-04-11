@@ -424,7 +424,7 @@ button {
   column-gap: var(--card-set-horizontal-gap);
 }
 .project-list-item {
-  flex-basis: calc(100%-2 * var(--card-set-horizontal-gap)) / 3;
+  flex-basis: calc(100% - 2 * var(--card-set-horizontal-gap)) / 3;
 }
 .projects-list-link {
   display: block;
@@ -500,11 +500,11 @@ button {
 .footer-logotype {
   margin-bottom: 16px;
 }
-.logotype > .page-footer-container {
-  margin-right: none;
-}
 .footer-general-container {
   display: flex;
+}
+.social-media-container {
+  margin-right: 80px;
 }
 .social-media-title {
   font-weight: 500;
@@ -538,6 +538,64 @@ button {
 }
 .social-media-icon {
   fill: #f4f4fd;
+}
+.subscribe-form-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-background);
+  margin-bottom: 16px;
+}
+.subscribe-form {
+  display: flex;
+}
+.subscribe-form-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--white-background);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--hero-background);
+  padding: 8px 16px;
+  margin-right: 24px;
+  color: var(--white-background);
+}
+.subscribe-form-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white-background);
+}
+.subscribe-form-submit {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: var(--white-background);
+  background: var(--primary-brand);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  margin: 0 auto;
+  transition: background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+}
+.subscribe-form-submit:hover,
+.subscribe-form-submit:focus {
+  background-color: var(--pressed-state);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.subscribe-form-icon {
+  fill: var(--white-background);
 }
 /*======================MODAL WINDOW=========================*/
 .backdrop {
